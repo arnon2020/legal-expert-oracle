@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "read-website-fast": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@just-every/mcp-read-website-fast"
+      ],
+      "env": {}
+    },
+    "brave-search": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "BSAT0ZND7A_U8gL8fbOR986nB1trRaC"
+      }
+    },
+    "arra-oracle-v2": {
+      "type": "stdio",
+      "command": "/home/claude/.bun/bin/bun",
+      "args": [
+        "run",
+        "/opt/arra-oracle-v3/src/index.ts"
+      ],
+      "env": {
+        "OLLAMA_BASE_URL": "http://oracle-ollama:11434"
+      }
+    }
+  }
+}

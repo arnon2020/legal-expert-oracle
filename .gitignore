@@ -1,0 +1,6 @@
+
+# Sensitive files
+.claude/settings.json
+.claude/projects/
+*.env
+.env
